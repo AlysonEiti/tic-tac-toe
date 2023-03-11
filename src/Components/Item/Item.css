@@ -1,0 +1,27 @@
+.item {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: #FFF;
+    cursor: pointer;
+}
+.item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.item.t {
+    border-top: 1px solid #FFF;
+}
+.item.l {
+    border-left: 1px solid #FFF;
+}
+.item.r {
+    border-right: 1px solid #FFF;
+}
+.item.b {
+    border-bottom: 1px solid #FFF;
+}

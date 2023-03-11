@@ -1,0 +1,13 @@
+.infoItem {
+    flex: 1;
+}
+.infoTitle {
+    text-align: center;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+.infoBody {
+    text-align: center;
+    color: #FFF;
+    font-size: 20px;
+}
