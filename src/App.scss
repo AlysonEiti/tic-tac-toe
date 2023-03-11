@@ -1,0 +1,89 @@
+@keyframes loading-initial {
+    0% { opacity: 0; background-color: #000000; width: 0; }
+    100% { opacity: 1; background-color: #333; width: 100%; }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    animation-name: loading-initial;
+    animation-duration: 2s;
+    animation-direction: normal;
+    overflow: hidden;
+}
+
+h1 {
+    color: #FFF;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.area {
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+}
+
+.info {
+    width: 300px;
+    display: flex;
+    margin-top: 30px;
+    border: 1px dotted #FFF;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+/********** TESTE ***********/
+
+@keyframes confetti-slow {
+    0% { transform: translate3d(0, 0, 0) rotateX(0) rotateY(0); }
+    100% { transform: translate3d(25px, 105vh, 0) rotateX(360deg) rotateY(180deg); }
+}
+
+@keyframes confetti-medium {
+    0% { transform: translate3d(0, 0, 0) rotateX(0) rotateY(0); }
+    100% { transform: translate3d(100px, 105vh, 0) rotateX(100deg) rotateY(360deg); }
+}
+
+@keyframes confetti-fast {
+    0% { transform: translate3d(0, 0, 0) rotateX(0) rotateY(0); }
+    100% { transform: translate3d(-50px, 105vh, 0) rotateX(10deg) rotateY(250deg); }
+}
+
+
+
+.confetti {
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  border-radius: 0%;
+
+  &--animation-slow {
+    animation: confetti-slow 2.25s linear 1 forwards;
+  }
+  
+  &--animation-medium {
+    animation: confetti-medium 1.75s linear 1 forwards;
+  }
+  
+  &--animation-fast {
+    animation: confetti-fast 1.25s linear 1 forwards;
+  }
+}

@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Item from './Components/Item';
 import Score from './Components/Score';
 import Button from './Components/Button';
