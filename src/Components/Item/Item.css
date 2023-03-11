@@ -1,4 +1,11 @@
+.divItem {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
 .item {
+    position: absolute;
     width: 100px;
     height: 100px;
     display: flex;
@@ -24,4 +31,38 @@
 }
 .item.b {
     border-bottom: 1px solid #FFF;
+}
+
+.vertical {
+    position: absolute;
+    border: 3px solid #FF7A93;
+    background: #FF7A93;
+    height: 100%;
+    left: 47px;
+}
+.horizontal {
+    position: absolute;
+    border: 3px solid #FF7A93;
+    background: #FF7A93;
+    height: 100%;
+    left: 47px;
+    transform: rotate(90deg);
+}
+.cross_left {
+    position: absolute;
+    border: 3px solid #FF7A93;
+    background: #FF7A93;
+    height: 142%;
+    left: 47px;
+    top: -21px;
+    transform: rotate(45deg);
+}
+.cross_right {
+    position: absolute;
+    border: 3px solid #FF7A93;
+    background: #FF7A93;
+    height: 142%;
+    left: 47px;
+    top: -21px;
+    transform: rotate(315deg);
 }
